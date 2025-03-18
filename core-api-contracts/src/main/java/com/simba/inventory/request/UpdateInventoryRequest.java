@@ -1,11 +1,11 @@
-package com.simba.order.request;
+package com.simba.inventory.request;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
 
 @Data
-public class CreateOrderRequest {
+public class UpdateInventoryRequest {
     @NotEmpty(message = "Please provide an id")
     @JsonProperty("id")
     private String id;

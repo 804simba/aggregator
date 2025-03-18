@@ -1,4 +1,4 @@
-package com.simba.events;
+package com.simba;
 
 import lombok.Data;
 

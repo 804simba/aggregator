@@ -1,4 +1,7 @@
-package com.simba.customerservice;
+package com.simba.customerservice.repository;
 
-public interface CustomerRepository {
+import com.simba.customerservice.model.Customer;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface CustomerRepository extends MongoRepository<Customer, String> {
 }

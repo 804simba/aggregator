@@ -1,0 +1,31 @@
+version: '3.7'
+services:
+  init-kafka:
+    image: confluentinc/cp-kafka:${KAFKA_VERSION}
+    entrypoint: [ '/bin/sh', '-c' ]
+    command: |
+      "
+      # block until kafka is reachable
+      kafka-topics --bootstrap-server kafka-broker-1:9092 --list
+      
+      echo -e 'Deleting kafka topics'
+      kafka-topics --bootstrap-server kafka-broker-1:9092 --topic customer-registered --delete --if-exists
+      kafka-topics --bootstrap-server kafka-broker-1:9092 --topic order-created --delete --if-exists
+      kafka-topics --bootstrap-server kafka-broker-1:9092 --topic payment-confirmed --delete --if-exists
+      kafka-topics --bootstrap-server kafka-broker-1:9092 --topic inventory-updated --delete --if-exists
+      kafka-topics --bootstrap-server kafka-broker-1:9092 --topic delivery-assigned --delete --if-exists
+      kafka-topics --bootstrap-server kafka-broker-1:9092 --topic order-status-updated --delete --if-exists
+      
+      echo -e 'Creating kafka topics'
+      kafka-topics --bootstrap-server kafka-broker-1:9092 --create --if-not-exists --topic customer-registered replication-factor 3 --partitions 3
+      kafka-topics --bootstrap-server kafka-broker-1:9092 --create --if-not-exists --topic order-created replication-factor 3 --partitions 3
+      kafka-topics --bootstrap-server kafka-broker-1:9092 --create --if-not-exists --topic payment-confirmed replication-factor 3 --partitions 3
+      kafka-topics --bootstrap-server kafka-broker-1:9092 --create --if-not-exists --topic inventory-updated replication-factor 3 --partitions 3
+      kafka-topics --bootstrap-server kafka-broker-1:9092 --create --if-not-exists --topic delivery-assigned replication-factor 3 --partitions 3
+      kafka-topics --bootstrap-server kafka-broker-1:9092 --create --if-not-exists --topic order-status-updated replication-factor 3 --partitions 3
+      
+      echo -e 'Successfully created the following topics'
+      kafka-topics --bootstrap-server kafka-broker-1:9092 --list
+      "
+    networks:
+      - ${GLOBAL_NETWORK:-kafka}

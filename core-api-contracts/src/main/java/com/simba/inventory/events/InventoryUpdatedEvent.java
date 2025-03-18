@@ -1,4 +1,10 @@
-package com.simba.order.events;
+package com.simba.inventory.events;
 
-public class OrderCreatedEvent {
+import lombok.Data;
+
+@Data
+public class InventoryUpdatedEvent {
+    private String productId;
+    private int quantity;
+    private String action;
 }

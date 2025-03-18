@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class OrderData {
+public class DeliveryData {
     private String id;
     private String customerId;
     private String productId;

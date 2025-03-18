@@ -1,35 +1,173 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="17cfac9e-3b73-43b4-9388-1656d33b1576" name="Changes" comment="" />
+    <list default="true" id="17cfac9e-3b73-43b4-9388-1656d33b1576" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-api-contracts/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/ApiResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/EventContract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/SagaPatternImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/common/EventType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/customer/events/CustomerRegisteredEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/customer/payload/CustomerData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/customer/request/CreateCustomerRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/delivery/events/DeliveryAssignedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/delivery/payload/DeliveryData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/delivery/request/AssignDeliveryRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/inventory/events/InventoryUpdatedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/inventory/payload/InventoryData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/inventory/request/UpdateInventoryRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/order/events/OrderCreatedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/order/events/OrderStatusUpdatedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/order/payload/OrderData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/order/payload/OrderItemData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/order/request/CreateOrderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/payment/events/PaymentConfirmedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/payment/payload/PaymentData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/payment/request/PaymentRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customerservice/src/main/java/com/simba/customerservice/model/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customerservice/src/main/java/com/simba/customerservice/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customerservice/src/main/java/com/simba/customerservice/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customerservice/src/main/java/com/simba/customerservice/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customerservice/src/main/java/com/simba/customerservice/service/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-infrastructure/src/main/java/com/simba/kafkainfrastructure/docker_compose/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-infrastructure/src/main/java/com/simba/kafkainfrastructure/docker_compose/common.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-infrastructure/src/main/java/com/simba/kafkainfrastructure/docker_compose/init_kafka.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-infrastructure/src/main/java/com/simba/kafkainfrastructure/docker_compose/kafka_cluster.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-infrastructure/src/main/java/com/simba/kafkainfrastructure/docker_compose/zookeeper.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/securityservice/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/validationservice/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/validationservice/src/main/java/com/simba/exception/AppException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/validationservice/src/main/java/com/simba/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/validationservice/src/main/java/com/simba/response/ErrorResponse.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2tvqcL7fmZLnaLSmnp8Te3ocL6S" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "nodejs_package_manager_path": "npm",
-    "show.migrate.to.gradle.popup": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.core-api-contracts [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.food-ordering-aggregator [install].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.CustomerserviceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-23&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/804simba/Entreprise/getrova/food-ordering-aggregator/core-api-contracts/src/main/java/com/simba/delivery&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/delivery" />
+      <recent name="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/inventory" />
+      <recent name="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/payment" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.CustomerserviceApplication">
+    <configuration name="CustomerserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="customerservice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.simba.customerservice.CustomerserviceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeliveryserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="deliveryservice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.simba.deliveryservice.DeliveryserviceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InventoryserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="inventoryservice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.simba.inventoryservice.InventoryserviceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaInfrastructureApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="kafka-infrastructure" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.simba.kafkainfrastructure.KafkaInfrastructureApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotificationserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="notificationservice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.simba.notificationservice.NotificationserviceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="paymentservice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.simba.paymentservice.PaymentserviceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -46,6 +184,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1741242974135</updated>
+      <workItem from="1741242975140" duration="1846000" />
+      <workItem from="1741273854555" duration="1197000" />
+      <workItem from="1742294810137" duration="8825000" />
+      <workItem from="1742324776255" duration="1832000" />
     </task>
     <servers />
   </component>

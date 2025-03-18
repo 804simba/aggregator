@@ -5,7 +5,7 @@ import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
 
 @Data
-public class CreateOrderRequest {
+public class AssignDeliveryRequest {
     @NotEmpty(message = "Please provide an id")
     @JsonProperty("id")
     private String id;
