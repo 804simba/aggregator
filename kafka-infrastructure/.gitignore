@@ -19,6 +19,14 @@ target/
 *.iml
 *.ipr
 
+# Kafka and Zookeeper volumes
+**/volumes/
+kafka-infrastructure/src/main/java/com/simba/kafkainfrastructure/docker_compose/volumes/
+**/docker_compose/volumes/
+volumes/
+**/volumes/kafka/
+**/volumes/zookeeper/
+
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/

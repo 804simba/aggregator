@@ -1,6 +1,7 @@
 services:
   init-kafka:
     image: confluentinc/cp-kafka:${KAFKA_VERSION}
+    platform: linux/amd64
     entrypoint: [ '/bin/sh', '-c' ]
     env_file:
       - .env

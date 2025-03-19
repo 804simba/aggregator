@@ -1,6 +1,7 @@
 services:
   schema-registry:
     image: confluentinc/cp-schema-registry:${KAFKA_VERSION}
+    platform: linux/amd64
     hostname: schema-registry
     depends_on:
       - kafka-broker-1
@@ -19,6 +20,7 @@ services:
 
   kafka-broker-1:
     image: confluentinc/cp-kafka:${KAFKA_VERSION}
+    platform: linux/amd64
     hostname: kafka-broker-1
     ports:
       - "19092:19092"
@@ -37,6 +39,7 @@ services:
 
   kafka-broker-2:
     image: confluentinc/cp-kafka:${KAFKA_VERSION}
+    platform: linux/amd64
     hostname: kafka-broker-2
     ports:
       - "29092:29092"
@@ -55,6 +58,7 @@ services:
 
   kafka-broker-3:
     image: confluentinc/cp-kafka:${KAFKA_VERSION}
+    platform: linux/amd64
     hostname: kafka-broker-3
     ports:
       - "39092:39092"
@@ -73,6 +77,7 @@ services:
 
   kafka-manager:
     image: hlebalbau/kafka-manager:stable
+    platform: linux/amd64
     restart: always
     ports:
       - "9000:9000"
