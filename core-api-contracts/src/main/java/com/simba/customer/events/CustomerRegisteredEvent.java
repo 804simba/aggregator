@@ -15,7 +15,7 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
-public class CustomerRegisteredBaseEvent extends BaseEvent {
+public class CustomerRegisteredEvent extends BaseEvent {
     private String customerId;
     private String fullName;
     private String email;

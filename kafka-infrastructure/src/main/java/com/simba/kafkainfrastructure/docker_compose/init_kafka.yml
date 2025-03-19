@@ -1,31 +1,33 @@
-version: '3.7'
 services:
   init-kafka:
     image: confluentinc/cp-kafka:${KAFKA_VERSION}
     entrypoint: [ '/bin/sh', '-c' ]
+    env_file:
+      - .env
     command: |
       "
       # block until kafka is reachable
       kafka-topics --bootstrap-server kafka-broker-1:9092 --list
-      
+
       echo -e 'Deleting kafka topics'
-      kafka-topics --bootstrap-server kafka-broker-1:9092 --topic customer-registered --delete --if-exists
-      kafka-topics --bootstrap-server kafka-broker-1:9092 --topic order-created --delete --if-exists
-      kafka-topics --bootstrap-server kafka-broker-1:9092 --topic payment-confirmed --delete --if-exists
-      kafka-topics --bootstrap-server kafka-broker-1:9092 --topic inventory-updated --delete --if-exists
-      kafka-topics --bootstrap-server kafka-broker-1:9092 --topic delivery-assigned --delete --if-exists
-      kafka-topics --bootstrap-server kafka-broker-1:9092 --topic order-status-updated --delete --if-exists
-      
+      kafka-topics --bootstrap-server kafka-broker-1:9092 --topic ${CUSTOMER_REGISTERED_TOPIC} --delete --if-exists
+      kafka-topics --bootstrap-server kafka-broker-1:9092 --topic ${ORDER_CREATED_TOPIC} --delete --if-exists
+      kafka-topics --bootstrap-server kafka-broker-1:9092 --topic ${PAYMENT_CONFIRMED_TOPIC} --delete --if-exists
+      kafka-topics --bootstrap-server kafka-broker-1:9092 --topic ${INVENTORY_UPDATED_TOPIC} --delete --if-exists
+      kafka-topics --bootstrap-server kafka-broker-1:9092 --topic ${DELIVERY_ASSIGNED_TOPIC} --delete --if-exists
+      kafka-topics --bootstrap-server kafka-broker-1:9092 --topic ${ORDER_STATUS_UPDATED_TOPIC} --delete --if-exists
+
       echo -e 'Creating kafka topics'
-      kafka-topics --bootstrap-server kafka-broker-1:9092 --create --if-not-exists --topic customer-registered replication-factor 3 --partitions 3
-      kafka-topics --bootstrap-server kafka-broker-1:9092 --create --if-not-exists --topic order-created replication-factor 3 --partitions 3
-      kafka-topics --bootstrap-server kafka-broker-1:9092 --create --if-not-exists --topic payment-confirmed replication-factor 3 --partitions 3
-      kafka-topics --bootstrap-server kafka-broker-1:9092 --create --if-not-exists --topic inventory-updated replication-factor 3 --partitions 3
-      kafka-topics --bootstrap-server kafka-broker-1:9092 --create --if-not-exists --topic delivery-assigned replication-factor 3 --partitions 3
-      kafka-topics --bootstrap-server kafka-broker-1:9092 --create --if-not-exists --topic order-status-updated replication-factor 3 --partitions 3
-      
+      kafka-topics --bootstrap-server kafka-broker-1:9092 --create --if-not-exists --topic ${CUSTOMER_REGISTERED_TOPIC} --replication-factor 3 --partitions 3
+      kafka-topics --bootstrap-server kafka-broker-1:9092 --create --if-not-exists --topic ${ORDER_CREATED_TOPIC} --replication-factor 3 --partitions 3
+      kafka-topics --bootstrap-server kafka-broker-1:9092 --create --if-not-exists --topic ${PAYMENT_CONFIRMED_TOPIC} --replication-factor 3 --partitions 3
+      kafka-topics --bootstrap-server kafka-broker-1:9092 --create --if-not-exists --topic ${INVENTORY_UPDATED_TOPIC} --replication-factor 3 --partitions 3
+      kafka-topics --bootstrap-server kafka-broker-1:9092 --create --if-not-exists --topic ${DELIVERY_ASSIGNED_TOPIC} --replication-factor 3 --partitions 3
+      kafka-topics --bootstrap-server kafka-broker-1:9092 --create --if-not-exists --topic ${ORDER_STATUS_UPDATED_TOPIC} --replication-factor 3 --partitions 3
+
       echo -e 'Successfully created the following topics'
       kafka-topics --bootstrap-server kafka-broker-1:9092 --list
+      sleep infinity
       "
     networks:
       - ${GLOBAL_NETWORK:-kafka}
