@@ -1,5 +1,14 @@
-# Maven
+# Maven target directory
 target/
+
+# Specific Maven build status files
+**/target/maven-status/
+**/target/maven-status/**/*
+
+# Specific jar for core-api-contracts
+core-api-contracts/target/*.jar
+
+# Keep Maven wrapper
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
@@ -7,22 +16,12 @@ target/
 # Compiled class files
 *.class
 
-# Package Files
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# IDE-specific files (optional but recommended)
+# Other common ignores
 .idea/
 *.iws
 *.iml
 *.ipr
 .vscode/
-*.sublime-workspace
-*.sublime-project
 .settings/
 .project
 .classpath
