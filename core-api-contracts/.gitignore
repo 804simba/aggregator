@@ -4,9 +4,13 @@ target/
 # Specific Maven build status files
 **/target/maven-status/
 **/target/maven-status/**/*
+**/maven-archiver/
+**/generated-sources/
+**/generated-test-sources/
 
-# Specific jar for core-api-contracts
-core-api-contracts/target/*.jar
+# Specifically ignore the core-api-contracts jar
+core-api-contracts/target/core-api-contracts-*.jar
+**/core-api-contracts-*.jar
 
 # Keep Maven wrapper
 !.mvn/wrapper/maven-wrapper.jar
