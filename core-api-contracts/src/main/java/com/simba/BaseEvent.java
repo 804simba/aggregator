@@ -1,13 +1,18 @@
 package com.simba;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 
 import java.time.LocalDateTime;
 
 @Data
-public abstract class EventContract<T> {
+@SuperBuilder
+@NoArgsConstructor
+@AllArgsConstructor
+public abstract class BaseEvent {
     private String id;
-    private T data;
     private String eventType;
     private String source;
     private LocalDateTime timestamp;
