@@ -2,7 +2,7 @@ package com.simba.customerservice.service.impl;
 
 import com.simba.ApiResponse;
 import com.simba.customer.payload.CustomerData;
-import com.simba.customer.request.CreateCustomerRequest;
+import com.simba.customer.command.CreateCustomerCommand;
 import com.simba.customerservice.model.Customer;
 import com.simba.customerservice.repository.CustomerRepository;
 import com.simba.customerservice.service.CustomerService;
@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 public class CustomerServiceImpl implements CustomerService {
     private final CustomerRepository customerRepository;
     @Override
-    public ApiResponse<CustomerData> create(CreateCustomerRequest request) {
+    public ApiResponse<CustomerData> create(CreateCustomerCommand request) {
         var customer = Customer.builder()
                 .email(request.getEmail())
                 .fullName(request.getFullName())

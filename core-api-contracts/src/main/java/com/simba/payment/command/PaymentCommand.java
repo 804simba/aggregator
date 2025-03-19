@@ -1,11 +1,11 @@
-package com.simba.payment.request;
+package com.simba.payment.command;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
 
 @Data
-public class PaymentRequest {
+public class PaymentCommand {
     @NotEmpty(message = "Please provide an id")
     @JsonProperty("id")
     private String id;

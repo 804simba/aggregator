@@ -1,11 +1,11 @@
-package com.simba.delivery.request;
+package com.simba.delivery.command;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
 
 @Data
-public class AssignDeliveryRequest {
+public class AssignDeliveryCommand {
     @NotEmpty(message = "Please provide an id")
     @JsonProperty("id")
     private String id;

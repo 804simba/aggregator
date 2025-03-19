@@ -1,11 +1,11 @@
-package com.simba.customer.request;
+package com.simba.customer.command;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
 
 @Data
-public class CreateCustomerRequest {
+public class CreateCustomerCommand {
     @NotEmpty(message = "Please provide an id")
     @JsonProperty("id")
     private String id;
