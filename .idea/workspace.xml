@@ -5,54 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17cfac9e-3b73-43b4-9388-1656d33b1576" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-api-contracts/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/ApiResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/EventContract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/SagaPatternImplementation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/common/EventType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/customer/events/CustomerRegisteredEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/customer/payload/CustomerData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/customer/request/CreateCustomerRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/delivery/events/DeliveryAssignedEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/delivery/payload/DeliveryData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/delivery/request/AssignDeliveryRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/inventory/events/InventoryUpdatedEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/inventory/payload/InventoryData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/inventory/request/UpdateInventoryRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/order/events/OrderCreatedEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/order/events/OrderStatusUpdatedEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/order/payload/OrderData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/order/payload/OrderItemData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/order/request/CreateOrderRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/payment/events/PaymentConfirmedEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/payment/payload/PaymentData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-api-contracts/src/main/java/com/simba/payment/request/PaymentRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customerservice/src/main/java/com/simba/customerservice/model/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customerservice/src/main/java/com/simba/customerservice/model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customerservice/src/main/java/com/simba/customerservice/repository/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customerservice/src/main/java/com/simba/customerservice/service/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customerservice/src/main/java/com/simba/customerservice/service/impl/CustomerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-infrastructure/src/main/java/com/simba/kafkainfrastructure/docker_compose/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-infrastructure/src/main/java/com/simba/kafkainfrastructure/docker_compose/common.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-infrastructure/src/main/java/com/simba/kafkainfrastructure/docker_compose/init_kafka.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-infrastructure/src/main/java/com/simba/kafkainfrastructure/docker_compose/kafka_cluster.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-infrastructure/src/main/java/com/simba/kafkainfrastructure/docker_compose/zookeeper.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/securityservice/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/validationservice/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/validationservice/src/main/java/com/simba/exception/AppException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/validationservice/src/main/java/com/simba/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/validationservice/src/main/java/com/simba/response/ErrorResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +24,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "804simba"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:804simba/aggregator.git",
+    "accountId": "a5199aed-db7d-4803-a607-6360ca95b356"
+  }
+}]]></component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
@@ -187,7 +152,7 @@
       <workItem from="1741242975140" duration="1846000" />
       <workItem from="1741273854555" duration="1197000" />
       <workItem from="1742294810137" duration="8825000" />
-      <workItem from="1742324776255" duration="1832000" />
+      <workItem from="1742324776255" duration="2541000" />
     </task>
     <servers />
   </component>

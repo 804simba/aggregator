@@ -24,7 +24,7 @@
         <module>paymentservice</module>
         <module>validationservice</module>
         <module>securityservice</module>
-        <module>infrastructure</module>
+        <module>kafka-infrastructure</module>
     </modules>
     <url/>
     <licenses>
